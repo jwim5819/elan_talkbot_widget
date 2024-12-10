@@ -5,18 +5,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const refreshButton = document.getElementById("refreshButton");
 
   // 배경 이미지 목록
+  // const backgroundImages = [
+  //   "https://i.ibb.co/n668rcp/Kakao-Talk-20240616-213639398.jpg",
+  //   "https://i.ibb.co/RHkQmC1/Kakao-Talk-20240616-213639398-03.jpg",
+  //   "https://i.ibb.co/85TN3Cp/Kakao-Talk-20240616-213639398-04.jpg",
+  //   "https://i.ibb.co/GQtpZLd/Kakao-Talk-20240616-213639398-05.jpg",
+  //   "https://i.ibb.co/ChXB7BF/Kakao-Talk-20240616-213639398-06.jpg",
+  //   "https://i.ibb.co/pwgWzPF/Kakao-Talk-20240616-213639398-01.jpg",
+  //   "https://i.ibb.co/3MWYxqr/Kakao-Talk-20240616-213639398-02.jpg",
+  // ];
+
   const backgroundImages = [
-    "https://i.ibb.co/n668rcp/Kakao-Talk-20240616-213639398.jpg",
-    "https://i.ibb.co/RHkQmC1/Kakao-Talk-20240616-213639398-03.jpg",
-    "https://i.ibb.co/85TN3Cp/Kakao-Talk-20240616-213639398-04.jpg",
-    "https://i.ibb.co/GQtpZLd/Kakao-Talk-20240616-213639398-05.jpg",
-    "https://i.ibb.co/ChXB7BF/Kakao-Talk-20240616-213639398-06.jpg",
-    "https://i.ibb.co/pwgWzPF/Kakao-Talk-20240616-213639398-01.jpg",
-    "https://i.ibb.co/3MWYxqr/Kakao-Talk-20240616-213639398-02.jpg",
+      "assets/images/1.png",
+      "assets/images/2.png",
+      "assets/images/3.png",
+      "assets/images/4.png",
+      "assets/images/5.png",
+      "assets/images/6.png",
+      "assets/images/7.png",
+      "assets/images/8.png",
+      "assets/images/9.png",
+      "assets/images/10.png",
+      "assets/images/11.png",
+      "assets/images/12.png",
+      "assets/images/13.png",
+      "assets/images/14.png",
+      "assets/images/15.png",
   ];
 
   // CSV 파일 경로
-  const csvFilePath = "data/elan_talk_data.csv";
+  const csvFilePath = "assets/data/elan_talk_data.csv";
 
   // 랜덤 선택
   function getRandomItem(items) {
