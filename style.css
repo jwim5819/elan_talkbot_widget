@@ -1,24 +1,42 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: url('background-image.jpg') no-repeat center center/cover;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    box-sizing: border-box;
-  }
-  
-  .quote-container {
-    background: rgba(0,0,0,0.5);
-    border-radius: 12px;
-    padding: 20px;
-    color: #fff;
-    width: 80%;
-    max-width: 500px;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image.png') no-repeat center center/cover;
+    color: white;
+}
+
+.quote-box {
+    background-color: rgba(173, 216, 230, 0.3); /* 파스텔톤 파란색 */
+    padding: 30px;
+    border-radius: 20px;
     text-align: center;
-    font-size: 1.2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.quote {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 1.6rem; /* 이전보다 약간 작게 */
+    font-weight: bold;
+    margin-bottom: 20px;
     line-height: 1.5;
-  }
-  
+    color: #f1f1f1;
+}
+
+.author {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 1rem; /* 약간 더 작게 조정 */
+    font-style: italic;
+    color: #d1d1d1;
+}
+
+.quote-box:hover {
+    transform: scale(1.05);
+}
