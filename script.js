@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
   
     // CSV 파일 경로
-    const csvFilePath = "data/elan_talkbot_parsing.csv";
+    const csvFilePath = "data/elan_talk_data.csv";
   
     // CSV 데이터를 읽어오기
     function loadCSVData(callback) {
